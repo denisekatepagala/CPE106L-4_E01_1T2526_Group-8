@@ -1,35 +1,47 @@
-def mean(nums):
-    if not nums:
+def average(data):
+    return sum(data) / len(data)
+
+def middle(data):
+    data.sort()
+    length = len(data)
+    mid_index = length // 2
+    if length % 2 == 0:
+        return (data[mid_index - 1] + data[mid_index]) / 2
+    else:
+        return data[mid_index]
+
+def most_frequent(data):
+    if not data:
         raise ValueError("List is empty.")
-    return sum(nums) / len(nums)
+    
+    count = {}
+    for value in data:
+        count[value] = count.get(value, 0) + 1
 
-def median(nums):
-    if not nums:
-        raise ValueError("List is empty.")
-    sorted_nums = sorted(nums)
-    count = len(sorted_nums)
-    mid = count // 2
-    return (sorted_nums[mid - 1] + sorted_nums[mid]) / 2 if count % 2 == 0 else sorted_nums[mid]
+    highest_freq = max(count.values())
+    modes = [value for value, freq in count.items() if freq == highest_freq]
 
-def mode(nums):
-    if not nums:
-        raise ValueError("List is empty.")
-    counts = {}
-    for v in nums:
-        counts[v] = counts.get(v, 0) + 1
-    max_count = max(counts.values())
-    winners = [v for v, c in counts.items() if c == max_count]
-    return None if len(winners) == len(set(nums)) else winners[0]
+    if len(modes) == len(set(data)):
+        return None
 
-def read_numbers():
-    buf = []
-    total = int(input("How many? "))
-    for idx in range(1, total + 1):
-        buf.append(float(input(f"Value #{idx}: ")))
-    return buf
+    return modes if len(modes) > 1 else modes[0]
 
-if __name__ == "__main__":
-    numbers = read_numbers()
-    print("\nMean:", mean(numbers))
-    print("Median:", median(numbers))
-    print("Mode:", mode(numbers))
+n_values = int(input("\nHow many numbers do you want to input? "))  
+
+data_list = []
+for i in range(1, n_values + 1):
+    suffix = "th"
+    if i == 1:
+        suffix = "st"
+    elif i == 2:
+        suffix = "nd"
+    elif i == 3:
+        suffix = "rd"
+    
+    number = float(input(f"Enter the {i}{suffix} number: "))
+    data_list.append(number)
+
+
+print("\nAverage (Mean):", average(data_list))
+print("Middle (Median):", middle(data_list))
+print("Most frequent (Mode):", most_frequent(data_list))
