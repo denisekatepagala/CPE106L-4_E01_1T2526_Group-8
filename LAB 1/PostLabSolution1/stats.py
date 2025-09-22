@@ -1,7 +1,7 @@
-def average(data):
+def mean(data):
     return sum(data) / len(data)
 
-def middle(data):
+def median(data):
     data.sort()
     length = len(data)
     mid_index = length // 2
@@ -10,7 +10,7 @@ def middle(data):
     else:
         return data[mid_index]
 
-def most_frequent(data):
+def Mode(data):
     if not data:
         raise ValueError("List is empty.")
     
@@ -42,6 +42,6 @@ for i in range(1, n_values + 1):
     data_list.append(number)
 
 
-print("\nAverage (Mean):", average(data_list))
-print("Middle (Median):", middle(data_list))
-print("Most frequent (Mode):", most_frequent(data_list))
+print("\nAverage (Mean):", mean(data_list))
+print("Median:", median(data_list))
+print("Most frequent (Mode):", Mode(data_list))
