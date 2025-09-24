@@ -1,37 +1,48 @@
 def mean(values):
     if not values:
         return 0
-    total = sum(values)
-    count = len(values)
-    return total / count
+    return sum(values) / len(values)
 
 def median(values):
     if not values:
         return 0
     sorted_values = sorted(values)
     size = len(sorted_values)
-    middle_index = size // 2
+    mid_index = size // 2
     if size % 2 == 0:
-        return (sorted_values[middle_index - 1] + sorted_values[middle_index]) / 2
+        return (sorted_values[mid_index - 1] + sorted_values[mid_index]) / 2
     else:
-        return sorted_values[middle_index]
+        return sorted_values[mid_index]
 
 def mode(values):
     if not values:
         return 0
-    frequency = {}
+    freq = {}
     for v in values:
-        frequency[v] = frequency.get(v, 0) + 1
-    max_freq = max(frequency.values())
-    modes = [v for v, count in frequency.items() if count == max_freq]
-    return modes[0]  # return first mode if multiple exist
+        freq[v] = freq.get(v, 0) + 1
+    max_freq = max(freq.values())
+    modes = [v for v, count in freq.items() if count == max_freq]
+    return modes[0]
 
 def main():
-    sample_data = [12, 23, 443, 54, 12, 324, 53, 42, 54, 65]
-    print("Sample data:", sample_data)
-    print("Mean:", mean(sample_data))
-    print("Median:", median(sample_data))
-    print("Mode:", mode(sample_data))
+    file_name = input("Enter the file name containing numbers: ")
+    numbers = []
+    try:
+        with open(file_name, 'r') as f:
+            for line in f:
+                for word in line.split():
+                    numbers.append(float(word))
+    except FileNotFoundError:
+        print("File not found.")
+        return
+    except ValueError:
+        print("File contains non-numeric values.")
+        return
+
+    print("\nNumbers from file:", numbers)
+    print("Mean:", mean(numbers))
+    print("Median:", median(numbers))
+    print("Mode:", mode(numbers))
 
 if __name__ == "__main__":
     main()
