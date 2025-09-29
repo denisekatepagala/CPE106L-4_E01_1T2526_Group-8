@@ -56,20 +56,19 @@ def main():
     student1 = Student("Ken", 5)
     student2 = Student("Alice", 5)
 
-    # Setting scores for both students
+
     for i in range(1, 6):
         student1.setScore(i, 90)
         student2.setScore(i, 95)
     
-    # Printing student details
+
     print(student1)
     print(student2)
 
-    # Comparing students
+
     print(f"\nIs {student1.getName()} equal to {student2.getName()}? {student1 == student2}")
     print(f"Is {student1.getName()} less than {student2.getName()}? {student1 < student2}")
     print(f"Is {student1.getName()} greater than or equal to {student2.getName()}? {student1 >= student2}")
 
 if __name__ == "__main__":
     main()
-
