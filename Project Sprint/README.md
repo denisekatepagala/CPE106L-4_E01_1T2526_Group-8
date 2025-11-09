@@ -47,5 +47,6 @@ Step 3: Install dependencies
 pip install fastapi uvicorn sqlmodel
 
 Step 4: Run the FastAPI server
-uvicorn app.main:app --reload
-Note: You should see "INFO: Uvicorn running on http:..."
+uvicorn app.main:app --reload 
+Note: You should see "INFO: Uvicorn running on http:..." If not working, try running it on CMD
+Search in Browser: http://127.0.0.1:8000/docs
