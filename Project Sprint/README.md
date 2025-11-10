@@ -1,6 +1,6 @@
 **Project Name: Accessible Transport Scheduler**
 ##
-**01 FastAPI & SQLite**
+**01 Database & Backend**
 
 This section serves as the backend server built with FastAPI and SQLite (using SQLModel). This manages Users, Drivers, and Ride Requests for an accessible transport scheduling system.
 #
@@ -33,6 +33,12 @@ This section serves as the backend server built with FastAPI and SQLite (using S
 			--- ride_requests.py
 		
 	- database.db
+
+	- test_main.py
+
+	- .venv
+
+	- .pytest_cache
 #
 **2. Installation & Setup Guide**
 
@@ -40,13 +46,30 @@ Step 1: Clone the repository
 
 Step 2: Create environment 
 ex.: For windows only: 
-python -m venv .venv 
-.venv\Scripts\activate
+
+- python -m venv .venv 
+
+- .venv\Scripts\activate
 
 Step 3: Install dependencies
-pip install fastapi uvicorn sqlmodel
+
+- pip install fastapi uvicorn sqlmodel
 
 Step 4: Run the FastAPI server
-uvicorn app.main:app --reload 
+
+- uvicorn app.main:app --reload
+  
 Note: You should see "INFO: Uvicorn running on http:..." If not working, try running it on CMD
 Search in Browser: http://127.0.0.1:8000/docs
+
+Note: You should see the Swagger UI with all endpoints (/users/, /drivers/, /ride-requests/)
+
+Step 5: Run unit tests (OPTIONAL)
+
+- pip install pytest (Install if pytest not yet installed)
+  
+- pytest test_main.py
+#
+END FOR 01 Database & Backend
+#
+
