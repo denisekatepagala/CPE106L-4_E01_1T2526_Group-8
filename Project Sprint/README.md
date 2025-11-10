@@ -1,6 +1,6 @@
 **Project Name: Accessible Transport Scheduler**
 ##
-**01 Database & Backend**
+**01 Database & Backend | Member Assigned: Denise Pagala**
 
 This section serves as the backend server built with FastAPI and SQLite (using SQLModel). This manages Users, Drivers, and Ride Requests for an accessible transport scheduling system.
 #
@@ -73,7 +73,7 @@ Step 5: Run unit tests (OPTIONAL)
 **-------------------------------------------------------- END FOR 01 Database & Backend -------------------------------------------------------**
 #
 
-**02 Frontend (FLET)**
+**02 Frontend (FLET) | Member Assigned: Ralph Lam**
 
 This section...
 #
@@ -82,7 +82,7 @@ This section...
 **-------------------------------------------------------- END FOR 02 Frontend (FLET) -------------------------------------------------------**
 #
 
-**03 Algorithm & Analytics**
+**03 Algorithm & Analytics | Member Assigned: JM Esperanza**
 
 This section...
 #
