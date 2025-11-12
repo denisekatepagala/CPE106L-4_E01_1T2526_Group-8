@@ -14,17 +14,17 @@ Step 1: Switch branches and choose "backend-mvp." Clone the repository
 Step 2: Create environment 
 ex.: For windows only: 
 
-- python -m venv .venv 
+  python -m venv .venv 
 
-- .venv\Scripts\activate
+  .venv\Scripts\activate
 
 Step 3: Install dependencies
 
-- pip install fastapi uvicorn sqlmodel
+  pip install fastapi uvicorn sqlmodel
 
 Step 4: Run the FastAPI server
 
-- uvicorn app.main:app --reload
+  uvicorn app.main:app --reload
   
 Note: You should see "INFO: Uvicorn running on http:..." If not working, try running it on CMD
 Search in Browser: http://127.0.0.1:8000/docs
@@ -33,19 +33,32 @@ Note: You should see the Swagger UI with all endpoints (/users/, /drivers/, /rid
 
 Step 5: Run unit tests (OPTIONAL)
 
-- pip install pytest (Install if pytest not yet installed)
+  pip install pytest (Install if pytest not yet installed)
   
-- pytest test_main.py
+  pytest test_main.py
 #
 **-------------------------------------------------------- END FOR 01 Database & Backend -------------------------------------------------------**
 #
 
 **02 Frontend (FLET) | Member Assigned: Ralph Lam**
 
-This section...
-#
-**1.Installation & Setup Guide** 
+This is a simple Python app built with Flet. It simulates a basic transportation scheduler with three user roles: User, Driver, and Administrator.
 
+- User Dashboard: Request rides and view ride history
+
+- Driver Dashboard: Register drivers and view assigned rides
+  
+- Administrator Dashboard: Generate reports and view ride logs
+#
+**1. Setup Guide** 
+
+Step 1: Install Flet
+
+  pip install flet
+
+Step 2: Run the App:
+
+  python "Flet App.py"
 #
 **-------------------------------------------------------- END FOR 02 Frontend (FLET) -------------------------------------------------------**
 #
