@@ -107,7 +107,7 @@ Step 2. **Run the App**:
 **-------------------------------------------------------- END FOR 02 Frontend (FLET) -------------------------------------------------------**
 #
 
-# 03 Algorithm & Analytics - Accessible Transportation Scheduler
+# 03 Algorithm, Analytics, & Integration - Accessible Transportation Scheduler
 
 ## Overview
 
@@ -196,5 +196,5 @@ The frontend, developed using **Flet**, interacts with the backend through the e
 - **Missing API Key**: If you're using Google Maps for static maps, make sure you've set up your **Google Maps API Key** in the `.env` file.
 - or run the app_flet.py for non Google maps version
 #
-**-------------------------------------------------------- END FOR 03 Algorithm & Analytics -------------------------------------------------------**
+**-------------------------------------------------------- END FOR 03 Algorithm, Analytics Integration -----------------------------------------**
 #
