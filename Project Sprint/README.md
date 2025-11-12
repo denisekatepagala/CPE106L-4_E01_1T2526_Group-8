@@ -177,8 +177,17 @@ The frontend, developed using **Flet**, interacts with the backend through the e
 2. **View ride requests** that are assigned to them as a driver.
 3. **View analytics** as an administrator, such as rides per day and average wait time.
 
-## Directory Structure
+## Troubleshooting: Killing a Port in Use (Windows)
 
+If you encounter a **"port already in use"** error when starting the server on **Windows**, follow these steps to free up the port:
+
+### Step 1: Find the Process Using the Port
+
+1. Open **Command Prompt** as **Administrator**.
+2. Run the following command to find the **Process ID (PID)** using the specific port (replace `8000` with your port number if needed):
+
+   ```bash
+   netstat -ano | findstr :8000
 
 ## Troubleshooting
 
@@ -192,6 +201,7 @@ The frontend, developed using **Flet**, interacts with the backend through the e
     ```bash
     uvicorn app.main:app --reload --port 8001
     ```
+    
 
 - **Missing API Key**: If you're using Google Maps for static maps, make sure you've set up your **Google Maps API Key** in the `.env` file.
 - or run the app_flet.py for non Google maps version
