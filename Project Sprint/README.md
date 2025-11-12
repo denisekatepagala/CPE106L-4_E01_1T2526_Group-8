@@ -55,6 +55,9 @@ Follow these steps to set up the project locally:
 
     Add your Google Maps API Key and any other necessary configurations to .env.
 
+   ```
+   OOGLE_MAPS_API_KEY=PUT_YOUR_OWN_KEY_HERE
+   USE_GOOGLE_MAPS=true
 Step 5: Run the FastAPI server
 
     uvicorn app.main:app --reload
