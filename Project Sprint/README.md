@@ -36,32 +36,6 @@ Follow these steps to set up the project locally:
    git clone https://github.com/denisekatepagala/CPE106L-4_E01_1T2526_Group-8.git
    cd 01_Database_&_Backend
 
-.
-├── flet_appFINAL.py
-├── IMPLEMENTATION_SUMMARY.md
-├── app/
-│   ├── README.md
-│   ├── __init__.py
-│   ├── database.py
-│   ├── main.py
-│   ├── routers/
-│   │   ├── __init__.py
-│   │   ├── analytics.py
-│   │   ├── drivers.py
-│   │   ├── ride_requests.py
-│   │   └── users.py
-│   ├── services/
-│   │   ├── __init__.py
-│   │   ├── analytics.py
-│   │   ├── google_maps.py
-│   │   └── scheduler.py
-│   └── models/
-│       └── models.py
-├── database.db
-├── requirements.txt
-├── test_main.py
-├── test_user_creation.py
-├── flet_app.py
    
 2. **Create a virtual environment**: 
     ```bash
