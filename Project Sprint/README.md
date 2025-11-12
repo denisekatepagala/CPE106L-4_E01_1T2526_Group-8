@@ -74,7 +74,7 @@ You should see the Swagger UI with all endpoints (/users/, /drivers/, /ride-requ
 
 Step 6: Run unit tests (OPTIONAL)
 
-    pip install pytest (Install if pytest not yet installed)
+    pip install pytest #Install if pytest not yet installed
   
     pytest test_main.py
 #
