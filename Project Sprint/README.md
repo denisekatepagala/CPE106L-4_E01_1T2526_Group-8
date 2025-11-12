@@ -42,7 +42,7 @@ This section serves as the backend server built with FastAPI and SQLite (using S
 #
 **2. Installation & Setup Guide**
 
-Step 1: Clone the repository
+Step 1: Switch branches and choose "backend-mvp." Clone the repository
 
 Step 2: Create environment 
 ex.: For windows only: 
