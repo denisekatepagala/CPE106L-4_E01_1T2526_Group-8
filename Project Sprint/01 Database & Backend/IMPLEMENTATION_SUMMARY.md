@@ -113,7 +113,7 @@ python -m uvicorn app.main:app --reload --port 8000
 
 ### Start Frontend
 ```bash
-python flet_app3.py
+python flet_appFINAL.py
 ```
 
 ### Test User Creation
