@@ -107,9 +107,9 @@ Step 2. **Run the App**:
 **-------------------------------------------------------- END FOR 02 Frontend (FLET) -------------------------------------------------------**
 #
 
-# 03 Algorithm, Analytics, & Integration - Accessible Transportation Scheduler
+## 03 Algorithm, Analytics, & Integration | Member Assigned: Jm Esperanza
 
-## Overview
+# Overview
 
 The **Algorithm & Analytics** module of the **Accessible Transportation Scheduler** is responsible for implementing the core logic for routing, scheduling, and analytics. This component uses **Dijkstra's Algorithm** for route optimization and provides analytics for administrators. The algorithms are exposed through **FastAPI** endpoints, and the **Google Maps API** is integrated to provide location-based services and distance calculations. The initial frontend built using **Flet** has been connected to these exposed endpoints in the backend to allow users to interact with the system seamlessly.
 
