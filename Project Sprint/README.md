@@ -1,4 +1,6 @@
 **Project Name: Accessible Transport Scheduler**
+
+This project is a ride booking system designed to provide safe and convenient transportation for elderly individuals and persons with accessibility needs. It allows users to request, track, and manage rides through an interface connected to a FastAPI and SQLite backend. The system promotes accessible and efficient mobility by enabling real time ride management and future integration of route optimization features.
 ##
 **01 Database & Backend | Member Assigned: Denise Pagala**
 
