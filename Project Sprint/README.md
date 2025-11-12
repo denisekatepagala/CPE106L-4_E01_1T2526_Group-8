@@ -23,7 +23,7 @@ The system is based on a **Model-View-Controller (MVC)** architecture:
 - A **Google Maps API Key** (for route and map integration).
 
 
-**01 Database & Backend | Member Assigned: Denise Pagala**
+##01 Database & Backend | Member Assigned: Denise Pagala##
 
 This section serves as the backend server built with FastAPI and SQLite (using SQLModel). This manages Users, Drivers, and Ride Requests for an accessible transport scheduling system.
 
