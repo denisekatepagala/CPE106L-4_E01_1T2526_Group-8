@@ -1,4 +1,4 @@
-# Accessible Transportation Scheduler
+## Accessible Transportation Scheduler
 
 ## Project Overview
 The **Accessible Transportation Scheduler** is an application designed to assist elderly individuals and persons with accessibility needs in scheduling rides. The system enables users to request rides, drivers to accept requests, and administrators to view ride analytics. The application uses **FastAPI** for the backend, **Flet** for the frontend, and integrates with the **Google Maps API** for location-based services.
@@ -23,7 +23,7 @@ The system is based on a **Model-View-Controller (MVC)** architecture:
 - A **Google Maps API Key** (for route and map integration).
 
 
-##01 Database & Backend | Member Assigned: Denise Pagala##
+## 01 Database & Backend | Member Assigned: Denise Pagala
 
 This section serves as the backend server built with FastAPI and SQLite (using SQLModel). This manages Users, Drivers, and Ride Requests for an accessible transport scheduling system.
 
@@ -81,7 +81,7 @@ Step 6: Run unit tests (OPTIONAL)
 **-------------------------------------------------------- END FOR 01 Database & Backend -------------------------------------------------------**
 #
 
-**02 Frontend (FLET) | Member Assigned: Ralph Lam**
+## 02 Frontend (FLET) | Member Assigned: Ralph Lam
 
 This is a simple Python app built with Flet. It simulates a basic transportation scheduler with three user roles: User, Driver, and Administrator.
 
